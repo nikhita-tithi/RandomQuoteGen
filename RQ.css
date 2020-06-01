@@ -1,0 +1,49 @@
+#box {
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15%;
+  padding: 10px;
+  height: auto;
+  width: 500px;
+  background-color: cornsilk;
+}
+
+body {
+  background-color: blueviolet;
+  margin: auto;
+  transition: all 2s;
+}
+
+#quote {
+  text-align: center;
+  padding: 2px;
+  color: blueviolet;
+}
+
+#author {
+  text-align: right;
+  padding: 2px;
+}
+
+#nextquote {
+  text-align: right;
+  padding: 2px;
+}
+
+button {
+  border-radius: 20px;
+  outline: none;
+}
+
+html {
+  margin: auto;
+}
+
+@media only screen and (max-width: 550px) {
+  #box {
+    width: 50%;
+    margin-top: 40%;
+  }
+}
