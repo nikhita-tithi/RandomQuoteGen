@@ -280,8 +280,9 @@ const bgcolors = [
   "#dce77a",
   "#77ecca",
 ];
-
-function myFunction() {
+const docobj = document.getElementById("qua");
+const docauth = document.getElementById("aut");
+const myFunction = () => {
   fetch(
     "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json"
   )
@@ -298,8 +299,10 @@ function myFunction() {
       const randQuote = quoarr[randQuoteno].quote;
 
       document.body.style.backgroundColor = randbgcol;
-      document.getElementById("aut").innerHTML = "-" + randAuthor;
-      document.getElementById("qua").innerHTML = randQuote;
-      document.getElementById("qua").style.color = randbgcol;
+      docauth.innerHTML = "-" + randAuthor;
+      docobj.innerHTML = randQuote;
+      docobj.style.color = randbgcol;
     });
+      
+      
 }
