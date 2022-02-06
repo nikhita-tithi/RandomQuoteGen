@@ -1,2 +1,2 @@
 # RandomQuoteGen
-Generates Random Quotes Using API
+Generates Random Quotes Using API's
